@@ -12,7 +12,7 @@ const City = () => {
                 <Text style={[stateName,  cityText]}>FL</Text>
 
                 <View style={[populationWrapper, rowLayout]}>
-                    <IconText iconName={'user'} iconColor={'cyan'} bodyText={'8000'} bodyTextStyles={populationText} />
+                    <IconText iconName={'user'} iconColor={'lightblue'} bodyText={'8000'} bodyTextStyles={populationText} />
                 </View>
 
                 <View style={[riseSetWrapper, rowLayout]}>
@@ -52,7 +52,7 @@ const styles = StyleSheet.create({
     populationText: {
         fontSize: 25,
         marginLeft: 7.5,
-        color: 'cyan'
+        color: 'lightblue'
     },
     riseSetWrapper: {
         justifyContent: 'space-around',

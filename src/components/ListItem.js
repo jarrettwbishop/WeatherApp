@@ -24,7 +24,7 @@ const styles = StyleSheet.create({
         justifyContent: 'space-around',
         alignItems: 'center',
         borderWidth: 5,
-        backgroundColor: 'pink'
+        backgroundColor: 'lightblue'
     },
     temp: {
         color: 'white',
