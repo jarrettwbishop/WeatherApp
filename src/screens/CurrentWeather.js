@@ -13,7 +13,7 @@ const CurrentWeather = ({ weatherData }) => {
     <SafeAreaView style={[wrapper, { backgroundColor: weatherType[weatherCondition].backgroundColor }]}>
       <View style={container}>
         <Feather name={weatherType[weatherCondition].icon} size={100} color="white" />
-        <Text style={tempStyles}>{temp}</Text>
+        <Text style={tempStyles}>{`${temp}°`}</Text>
         <Text style={feelsLike}>{`Feels like ${feels_like}°`}</Text>
 
         <RowText 
@@ -41,7 +41,6 @@ const CurrentWeather = ({ weatherData }) => {
 const styles = StyleSheet.create({
 
   wrapper: {
-    backgroundColor: 'lightblue',
     flex: 1
   },
   container: {
@@ -71,10 +70,10 @@ const styles = StyleSheet.create({
     marginBottom: 40
   },
   description: {
-    fontSize: 48
+    fontSize: 43
   },
   message: {
-    fontSize: 30
+    fontSize: 25
   }
 })
 export default CurrentWeather;
