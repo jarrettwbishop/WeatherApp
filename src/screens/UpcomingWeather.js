@@ -42,10 +42,11 @@ const DATA = [
 
 const UpcomingWeather = () => {
     const renderItem = ({item}) => (
-        <ListItem condition={item.weather[0].main} 
-        dt_txt={item.dt_txt} 
-        min={item.main.temp_min} 
-        max={item.main.temp_max} 
+        <ListItem 
+            condition={item.weather[0].main} 
+            dt_txt={item.dt_txt} 
+            min={item.main.temp_min} 
+            max={item.main.temp_max} 
         />
     )
     const {container, image} = styles
